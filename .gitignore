@@ -1,0 +1,67 @@
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.prof
+go.work
+go.work.sum
+
+# Binaries
+bin/
+dist/
+
+# Vendor (if not using modules)
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs
+*.log
+logs/
+
+# Test coverage
+coverage.out
+coverage.html
+*.coverprofile
+
+# Build artifacts
+build/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Dependency directories
+node_modules/
+
+# Spec artifacts (keep tracked)
+# specs/
+
+# Database files
+*.db
+*.sqlite

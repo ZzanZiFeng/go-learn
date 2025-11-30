@@ -1,0 +1,53 @@
+# Prometheus配置文件 - Go后端学习教程
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+# Alertmanager配置（可选）
+# alerting:
+#   alertmanagers:
+#     - static_configs:
+#         - targets:
+#           - alertmanager:9093
+
+# 规则文件（可选）
+# rule_files:
+#   - "alert_rules.yml"
+
+# 抓取配置
+scrape_configs:
+  # Prometheus自身监控
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Go应用监控（教程示例项目）
+  - job_name: 'go-app'
+    static_configs:
+      - targets: ['host.docker.internal:8080']
+    metrics_path: /metrics
+    scrape_interval: 5s
+
+  # Todo API项目
+  - job_name: 'todo-api'
+    static_configs:
+      - targets: ['host.docker.internal:8081']
+    metrics_path: /metrics
+    scrape_interval: 5s
+
+  # 认证服务项目
+  - job_name: 'auth-service'
+    static_configs:
+      - targets: ['host.docker.internal:8082']
+    metrics_path: /metrics
+    scrape_interval: 5s
+
+  # PostgreSQL监控（需要postgres_exporter）
+  # - job_name: 'postgresql'
+  #   static_configs:
+  #     - targets: ['postgres-exporter:9187']
+
+  # Redis监控（需要redis_exporter）
+  # - job_name: 'redis'
+  #   static_configs:
+  #     - targets: ['redis-exporter:9121']

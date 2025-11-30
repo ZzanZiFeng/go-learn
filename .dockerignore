@@ -1,0 +1,49 @@
+# Git
+.git/
+.gitignore
+
+# Dependencies
+node_modules/
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.crt
+
+# Logs
+*.log
+logs/
+
+# Test files
+*_test.go
+tests/
+coverage.out
+
+# Documentation
+*.md
+docs/
+specs/
+README*
+
+# Build artifacts not needed in image
+Dockerfile*
+docker-compose*
+.dockerignore
+Makefile
+
+# Go build cache
+go.sum
