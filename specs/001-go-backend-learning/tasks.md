@@ -42,16 +42,16 @@ infra/                        # 基础设施配置
 
 **Purpose**: Project initialization, development environment, and shared infrastructure
 
-- [ ] T001 Create project root structure with docs/, projects/, tests/, examples/, infra/ directories
-- [ ] T002 [P] Create root README.md with project overview and four-track learning path at /README.md
-- [ ] T003 [P] Create docs/00-introduction/README.md with tutorial roadmap, prerequisites, and track overview
-- [ ] T004 [P] Create infra/docker-compose.yml with PostgreSQL, Redis, RabbitMQ services
-- [ ] T005 [P] Create infra/postgres/init.sql with initial database setup scripts
-- [ ] T006 [P] Create infra/redis/redis.conf with Redis configuration
-- [ ] T007 [P] Create infra/monitoring/prometheus.yml with Prometheus scrape configuration
-- [ ] T008 [P] Create infra/monitoring/grafana/ with Grafana dashboards and datasources provisioning
-- [ ] T009 [P] Create root go.mod and go.work for workspace management
-- [ ] T010 [P] Create examples/go.mod for shared example code
+- [x] T001 Create project root structure with docs/, projects/, tests/, examples/, infra/ directories
+- [x] T002 [P] Create root README.md with project overview and four-track learning path at /README.md
+- [x] T003 [P] Create docs/00-introduction/README.md with tutorial roadmap, prerequisites, and track overview
+- [x] T004 [P] Create infra/docker-compose.yml with PostgreSQL, Redis, RabbitMQ services
+- [x] T005 [P] Create infra/postgres/init.sql with initial database setup scripts
+- [x] T006 [P] Create infra/redis/redis.conf with Redis configuration
+- [x] T007 [P] Create infra/monitoring/prometheus.yml with Prometheus scrape configuration
+- [x] T008 [P] Create infra/monitoring/grafana/ with Grafana dashboards and datasources provisioning
+- [x] T009 [P] Create root go.mod and go.work for workspace management
+- [x] T010 [P] Create examples/go.mod for shared example code
 
 ---
 
@@ -59,15 +59,15 @@ infra/                        # 基础设施配置
 
 **Purpose**: Create base structures for all four tracks and practical projects
 
-- [ ] T011 Create projects/todo-cli/go.mod and basic project structure (cmd/, internal/)
-- [ ] T012 [P] Create projects/todo-api/go.mod and layered structure (cmd/, internal/handlers,services,repositories,models/)
-- [ ] T013 [P] Create projects/auth-service/go.mod and project structure
-- [ ] T014 [P] Create projects/fullstack-demo/go.mod with backend/ and docker-compose.yml
-- [ ] T015 [P] Create tests/go.mod and basic test utilities
-- [ ] T016 [P] Create docs/01-development/ directory structure for all 12 chapters
-- [ ] T017 [P] Create docs/02-practice/ directory structure for all 4 projects
-- [ ] T018 [P] Create docs/03-deployment/ directory structure for all 5 chapters
-- [ ] T019 [P] Create docs/04-testing/ directory structure for all 5 chapters
+- [x] T011 Create projects/todo-cli/go.mod and basic project structure (cmd/, internal/)
+- [x] T012 [P] Create projects/todo-api/go.mod and layered structure (cmd/, internal/handlers,services,repositories,models/)
+- [x] T013 [P] Create projects/auth-service/go.mod and project structure
+- [x] T014 [P] Create projects/fullstack-demo/go.mod with backend/ and docker-compose.yml
+- [x] T015 [P] Create tests/go.mod and basic test utilities
+- [x] T016 [P] Create docs/01-development/ directory structure for all 12 chapters
+- [x] T017 [P] Create docs/02-practice/ directory structure for all 4 projects
+- [x] T018 [P] Create docs/03-deployment/ directory structure for all 5 chapters
+- [x] T019 [P] Create docs/04-testing/ directory structure for all 5 chapters
 
 **Checkpoint**: Foundation ready - all tracks can be implemented in parallel
 
@@ -79,37 +79,37 @@ infra/                        # 基础设施配置
 
 **Goal**: Enable learners to set up Go development environment and run first program
 
-- [ ] T020 [DEV-00] Create docs/01-development/00-environment/README.md with chapter overview and objectives
-- [ ] T021 [P] [DEV-00] Write install-guide.md with Go installation for macOS/Windows/Linux
-- [ ] T022 [P] [DEV-00] Write gopath-modules.md explaining GOPATH vs Go Modules
-- [ ] T023 [P] [DEV-00] Write vscode-setup.md with VS Code Go plugin configuration
-- [ ] T024 [DEV-00] Write first-program.md with Hello World example and explanation
-- [ ] T025 [P] [DEV-00] Create examples/syntax/hello/main.go with Hello World example
-- [ ] T026 [DEV-00] Add exercises and solutions in docs/01-development/00-environment/
+- [x] T020 [DEV-00] Create docs/01-development/00-environment/README.md with chapter overview and objectives
+- [x] T021 [P] [DEV-00] Write install-guide.md with Go installation for macOS/Windows/Linux
+- [x] T022 [P] [DEV-00] Write gopath-modules.md explaining GOPATH vs Go Modules
+- [x] T023 [P] [DEV-00] Write vscode-setup.md with VS Code Go plugin configuration
+- [x] T024 [DEV-00] Write first-program.md with Hello World example and explanation
+- [x] T025 [P] [DEV-00] Create examples/syntax/hello/main.go with Hello World example
+- [x] T026 [DEV-00] Add exercises and solutions in docs/01-development/00-environment/
 
 ### DEV-01: 语法基础 (User Story 2)
 
 **Goal**: Enable learners to understand Go basics with JS/TS comparisons
 
-- [ ] T027 [DEV-01] Create docs/01-development/01-syntax/README.md with chapter overview
-- [ ] T028 [P] [DEV-01] Write 01-variables.md covering var, :=, const with JS comparison
-- [ ] T029 [P] [DEV-01] Write 02-basic-types.md covering int, string, bool, float64
-- [ ] T030 [P] [DEV-01] Write 03-composite-types.md covering array, slice, map with JS comparison
-- [ ] T031 [P] [DEV-01] Write 04-control-flow.md covering if, for, switch
-- [ ] T032 [P] [DEV-01] Write 05-functions.md covering params, returns, multiple returns
-- [ ] T033 [P] [DEV-01] Write 06-pointers.md covering pointer basics
-- [ ] T034 [P] [DEV-01] Write 07-error-handling.md covering error, panic, recover
-- [ ] T035 [P] [DEV-01] Write 08-packages.md covering import, go mod
-- [ ] T036 [DEV-01] Write js-comparison.md summarizing all Go vs JS/TS differences
-- [ ] T037 [P] [DEV-01] Create examples/syntax/variables/main.go with variable examples
-- [ ] T038 [P] [DEV-01] Create examples/syntax/types/main.go with type examples
-- [ ] T039 [P] [DEV-01] Create examples/syntax/slices/main.go with slice examples
-- [ ] T040 [P] [DEV-01] Create examples/syntax/maps/main.go with map examples
-- [ ] T041 [P] [DEV-01] Create examples/syntax/control/main.go with control flow examples
-- [ ] T042 [P] [DEV-01] Create examples/syntax/functions/main.go with function examples
-- [ ] T043 [P] [DEV-01] Create examples/syntax/pointers/main.go with pointer examples
-- [ ] T044 [P] [DEV-01] Create examples/syntax/errors/main.go with error handling examples
-- [ ] T045 [DEV-01] Add exercises and solutions in docs/01-development/01-syntax/
+- [x] T027 [DEV-01] Create docs/01-development/01-syntax/README.md with chapter overview
+- [x] T028 [P] [DEV-01] Write 01-variables.md covering var, :=, const with JS comparison
+- [x] T029 [P] [DEV-01] Write 02-basic-types.md covering int, string, bool, float64
+- [x] T030 [P] [DEV-01] Write 03-composite-types.md covering array, slice, map with JS comparison
+- [x] T031 [P] [DEV-01] Write 04-control-flow.md covering if, for, switch
+- [x] T032 [P] [DEV-01] Write 05-functions.md covering params, returns, multiple returns
+- [x] T033 [P] [DEV-01] Write 06-pointers.md covering pointer basics
+- [x] T034 [P] [DEV-01] Write 07-error-handling.md covering error, panic, recover
+- [x] T035 [P] [DEV-01] Write 08-packages.md covering import, go mod
+- [x] T036 [DEV-01] Write js-comparison.md summarizing all Go vs JS/TS differences
+- [x] T037 [P] [DEV-01] Create examples/syntax/variables/main.go with variable examples
+- [x] T038 [P] [DEV-01] Create examples/syntax/types/main.go with type examples
+- [x] T039 [P] [DEV-01] Create examples/syntax/slices/main.go with slice examples
+- [x] T040 [P] [DEV-01] Create examples/syntax/maps/main.go with map examples
+- [x] T041 [P] [DEV-01] Create examples/syntax/control/main.go with control flow examples
+- [x] T042 [P] [DEV-01] Create examples/syntax/functions/main.go with function examples
+- [x] T043 [P] [DEV-01] Create examples/syntax/pointers/main.go with pointer examples
+- [x] T044 [P] [DEV-01] Create examples/syntax/errors/main.go with error handling examples
+- [x] T045 [DEV-01] Add exercises and solutions in docs/01-development/01-syntax/
 
 **Checkpoint**: DEV-00, DEV-01 complete - Learners can set up Go and write basic programs
 
@@ -121,40 +121,40 @@ infra/                        # 基础设施配置
 
 **Goal**: Enable learners to design code with structs and interfaces
 
-- [ ] T046 [DEV-02] Create docs/01-development/02-struct-interface/README.md with chapter overview
-- [ ] T047 [P] [DEV-02] Write 01-structs.md covering struct definition and initialization
-- [ ] T048 [P] [DEV-02] Write 02-struct-tags.md covering json, db tags
-- [ ] T049 [P] [DEV-02] Write 03-methods.md covering value vs pointer receivers
-- [ ] T050 [P] [DEV-02] Write 04-interfaces.md covering interface definition and implicit implementation
-- [ ] T051 [P] [DEV-02] Write 05-type-assertion.md covering type assertions and switches
-- [ ] T052 [P] [DEV-02] Write 06-embedding.md covering struct embedding (composition)
-- [ ] T053 [P] [DEV-02] Write 07-generics.md covering generics basics (Go 1.18+)
-- [ ] T054 [P] [DEV-02] Create examples/syntax/structs/main.go with struct examples
-- [ ] T055 [P] [DEV-02] Create examples/syntax/methods/main.go with method examples
-- [ ] T056 [P] [DEV-02] Create examples/syntax/interfaces/main.go with interface examples
-- [ ] T057 [P] [DEV-02] Create examples/syntax/embedding/main.go with composition examples
-- [ ] T058 [DEV-02] Add exercises and solutions in docs/01-development/02-struct-interface/
+- [x] T046 [DEV-02] Create docs/01-development/02-struct-interface/README.md with chapter overview
+- [x] T047 [P] [DEV-02] Write 01-structs.md covering struct definition and initialization
+- [x] T048 [P] [DEV-02] Write 02-struct-tags.md covering json, db tags
+- [x] T049 [P] [DEV-02] Write 03-methods.md covering value vs pointer receivers
+- [x] T050 [P] [DEV-02] Write 04-interfaces.md covering interface definition and implicit implementation
+- [x] T051 [P] [DEV-02] Write 05-type-assertion.md covering type assertions and switches
+- [x] T052 [P] [DEV-02] Write 06-embedding.md covering struct embedding (composition)
+- [x] T053 [P] [DEV-02] Write 07-generics.md covering generics basics (Go 1.18+)
+- [x] T054 [P] [DEV-02] Create examples/syntax/structs/main.go with struct examples
+- [x] T055 [P] [DEV-02] Create examples/syntax/methods/main.go with method examples
+- [x] T056 [P] [DEV-02] Create examples/syntax/interfaces/main.go with interface examples
+- [x] T057 [P] [DEV-02] Create examples/syntax/embedding/main.go with composition examples
+- [x] T058 [DEV-02] Add exercises and solutions in docs/01-development/02-struct-interface/
 
 ### DEV-03: 并发编程 (User Story 4)
 
 **Goal**: Enable learners to write concurrent programs with goroutines and channels
 
-- [ ] T059 [DEV-03] Create docs/01-development/03-concurrency/README.md with chapter overview
-- [ ] T060 [P] [DEV-03] Write 01-goroutines.md covering goroutine basics with async/await comparison
-- [ ] T061 [P] [DEV-03] Write 02-channels.md covering channel creation, send, receive
-- [ ] T062 [P] [DEV-03] Write 03-buffered-chan.md covering buffered channels
-- [ ] T063 [P] [DEV-03] Write 04-select.md covering select for multiplexing
-- [ ] T064 [P] [DEV-03] Write 05-sync-package.md covering WaitGroup, Mutex, RWMutex
-- [ ] T065 [P] [DEV-03] Write 06-context.md covering context for cancellation and timeout
-- [ ] T066 [P] [DEV-03] Write 07-patterns.md covering worker pool, fan-out/fan-in
-- [ ] T067 [P] [DEV-03] Write 08-race-detection.md covering race detection and avoidance
-- [ ] T068 [P] [DEV-03] Create examples/concurrency/goroutines/main.go with goroutine examples
-- [ ] T069 [P] [DEV-03] Create examples/concurrency/channels/main.go with channel examples
-- [ ] T070 [P] [DEV-03] Create examples/concurrency/select/main.go with select examples
-- [ ] T071 [P] [DEV-03] Create examples/concurrency/sync/main.go with sync primitives examples
-- [ ] T072 [P] [DEV-03] Create examples/concurrency/context/main.go with context examples
-- [ ] T073 [P] [DEV-03] Create examples/concurrency/patterns/main.go with pattern examples
-- [ ] T074 [DEV-03] Add exercises and solutions in docs/01-development/03-concurrency/
+- [x] T059 [DEV-03] Create docs/01-development/03-concurrency/README.md with chapter overview
+- [x] T060 [P] [DEV-03] Write 01-goroutines.md covering goroutine basics with async/await comparison
+- [x] T061 [P] [DEV-03] Write 02-channels.md covering channel creation, send, receive
+- [x] T062 [P] [DEV-03] Write 03-buffered-chan.md covering buffered channels
+- [x] T063 [P] [DEV-03] Write 04-select.md covering select for multiplexing
+- [x] T064 [P] [DEV-03] Write 05-sync-package.md covering WaitGroup, Mutex, RWMutex
+- [x] T065 [P] [DEV-03] Write 06-context.md covering context for cancellation and timeout
+- [x] T066 [P] [DEV-03] Write 07-patterns.md covering worker pool, fan-out/fan-in
+- [x] T067 [P] [DEV-03] Write 08-race-detection.md covering race detection and avoidance
+- [x] T068 [P] [DEV-03] Create examples/concurrency/goroutines/main.go with goroutine examples
+- [x] T069 [P] [DEV-03] Create examples/concurrency/channels/main.go with channel examples
+- [x] T070 [P] [DEV-03] Create examples/concurrency/select/main.go with select examples
+- [x] T071 [P] [DEV-03] Create examples/concurrency/sync/main.go with sync primitives examples
+- [x] T072 [P] [DEV-03] Create examples/concurrency/context/main.go with context examples
+- [x] T073 [P] [DEV-03] Create examples/concurrency/patterns/main.go with pattern examples
+- [x] T074 [DEV-03] Add exercises and solutions in docs/01-development/03-concurrency/
 
 **Checkpoint**: DEV-02, DEV-03 complete - Learners understand Go's OOP and concurrency
 
@@ -166,59 +166,59 @@ infra/                        # 基础设施配置
 
 **Goal**: Enable learners to structure Go projects professionally
 
-- [ ] T075 [DEV-04] Create docs/01-development/04-architecture/README.md with chapter overview
-- [ ] T076 [P] [DEV-04] Write 01-project-layout.md covering standard Go project structure
-- [ ] T077 [P] [DEV-04] Write 02-layered-arch.md covering Handler/Service/Repository pattern
-- [ ] T078 [P] [DEV-04] Write 03-dependency-injection.md covering DI patterns
-- [ ] T079 [P] [DEV-04] Write 04-config-management.md covering Viper configuration
-- [ ] T080 [P] [DEV-04] Write 05-error-design.md covering error handling strategies
-- [ ] T081 [P] [DEV-04] Write 06-microservices-intro.md covering microservices concepts and API gateway
-- [ ] T082 [P] [DEV-04] Create examples/patterns/layered/ with layered architecture example project
-- [ ] T083 [P] [DEV-04] Create examples/patterns/config/main.go with Viper example
-- [ ] T084 [DEV-04] Add exercises and solutions in docs/01-development/04-architecture/
+- [x] T075 [DEV-04] Create docs/01-development/04-architecture/README.md with chapter overview
+- [x] T076 [P] [DEV-04] Write 01-project-layout.md covering standard Go project structure
+- [x] T077 [P] [DEV-04] Write 02-layered-arch.md covering Handler/Service/Repository pattern
+- [x] T078 [P] [DEV-04] Write 03-dependency-injection.md covering DI patterns
+- [x] T079 [P] [DEV-04] Write 04-config-management.md covering Viper configuration
+- [x] T080 [P] [DEV-04] Write 05-error-design.md covering error handling strategies
+- [x] T081 [P] [DEV-04] Write 06-microservices-intro.md covering microservices concepts and API gateway
+- [x] T082 [P] [DEV-04] Create examples/patterns/layered/ with layered architecture example project
+- [x] T083 [P] [DEV-04] Create examples/patterns/config/main.go with Viper example
+- [x] T084 [DEV-04] Add exercises and solutions in docs/01-development/04-architecture/
 
 ### DEV-05: Web API开发 (User Story 6)
 
 **Goal**: Enable learners to build RESTful API services
 
-- [ ] T085 [DEV-05] Create docs/01-development/05-web-api/README.md with chapter overview
-- [ ] T086 [P] [DEV-05] Write 01-http-basics.md covering net/http package
-- [ ] T087 [P] [DEV-05] Write 02-gin-intro.md covering Gin framework basics
-- [ ] T088 [P] [DEV-05] Write 03-routing.md covering path params, query params, route groups
-- [ ] T089 [P] [DEV-05] Write 04-request-binding.md covering JSON, Form, URI binding
-- [ ] T090 [P] [DEV-05] Write 05-response.md covering JSON responses and error responses
-- [ ] T091 [P] [DEV-05] Write 06-validation.md covering request validation with binding tags
-- [ ] T092 [P] [DEV-05] Write 07-middleware.md covering logging, recovery, CORS middleware
-- [ ] T093 [P] [DEV-05] Write 08-error-handling.md covering API error handling patterns
-- [ ] T094 [P] [DEV-05] Write 09-file-upload.md covering file upload handling
-- [ ] T095 [P] [DEV-05] Write 10-swagger.md covering Swagger/OpenAPI documentation
-- [ ] T096 [P] [DEV-05] Create examples/web/basic-server/main.go with net/http example
-- [ ] T097 [P] [DEV-05] Create examples/web/gin-basic/main.go with basic Gin example
-- [ ] T098 [P] [DEV-05] Create examples/web/routing/main.go with routing examples
-- [ ] T099 [P] [DEV-05] Create examples/web/middleware/main.go with middleware examples
-- [ ] T100 [P] [DEV-05] Create examples/web/validation/main.go with validation examples
-- [ ] T101 [DEV-05] Add exercises and solutions in docs/01-development/05-web-api/
+- [x] T085 [DEV-05] Create docs/01-development/05-web-api/README.md with chapter overview
+- [x] T086 [P] [DEV-05] Write 01-http-basics.md covering net/http package
+- [x] T087 [P] [DEV-05] Write 02-gin-intro.md covering Gin framework basics
+- [x] T088 [P] [DEV-05] Write 03-routing.md covering path params, query params, route groups
+- [x] T089 [P] [DEV-05] Write 04-request-binding.md covering JSON, Form, URI binding
+- [x] T090 [P] [DEV-05] Write 05-response.md covering JSON responses and error responses
+- [x] T091 [P] [DEV-05] Write 06-validation.md covering request validation with binding tags
+- [x] T092 [P] [DEV-05] Write 07-middleware.md covering logging, recovery, CORS middleware
+- [x] T093 [P] [DEV-05] Write 08-error-handling.md covering API error handling patterns
+- [x] T094 [P] [DEV-05] Write 09-file-upload.md covering file upload handling
+- [x] T095 [P] [DEV-05] Write 10-swagger.md covering Swagger/OpenAPI documentation
+- [x] T096 [P] [DEV-05] Create examples/web/basic-server/main.go with net/http example
+- [x] T097 [P] [DEV-05] Create examples/web/gin-basic/main.go with basic Gin example
+- [x] T098 [P] [DEV-05] Create examples/web/routing/main.go with routing examples
+- [x] T099 [P] [DEV-05] Create examples/web/middleware/main.go with middleware examples
+- [x] T100 [P] [DEV-05] Create examples/web/validation/main.go with validation examples
+- [x] T101 [DEV-05] Add exercises and solutions in docs/01-development/05-web-api/
 
 ### DEV-06: 认证授权 (User Story 7)
 
 **Goal**: Enable learners to implement authentication and authorization
 
-- [ ] T102 [DEV-06] Create docs/01-development/06-authentication/README.md with chapter overview
-- [ ] T103 [P] [DEV-06] Write 01-auth-intro.md covering authentication vs authorization concepts
-- [ ] T104 [P] [DEV-06] Write 02-password.md covering bcrypt password hashing
-- [ ] T105 [P] [DEV-06] Write 03-jwt-basics.md covering JWT structure and principles
-- [ ] T106 [P] [DEV-06] Write 04-jwt-impl.md covering JWT generation, validation, refresh
-- [ ] T107 [P] [DEV-06] Write 05-jwt-middleware.md covering JWT authentication middleware
-- [ ] T108 [P] [DEV-06] Write 06-session.md covering session-based authentication
-- [ ] T109 [P] [DEV-06] Write 07-jwt-vs-session.md comparing JWT and session approaches
-- [ ] T110 [P] [DEV-06] Write 08-oauth2-intro.md covering OAuth2 principles
-- [ ] T111 [P] [DEV-06] Write 09-oauth2-github.md covering GitHub OAuth2 integration
-- [ ] T112 [P] [DEV-06] Write 10-rbac.md covering role-based access control
-- [ ] T113 [P] [DEV-06] Create examples/auth/jwt/main.go with JWT examples
-- [ ] T114 [P] [DEV-06] Create examples/auth/middleware/main.go with auth middleware
-- [ ] T115 [P] [DEV-06] Create examples/auth/session/main.go with session examples
-- [ ] T116 [P] [DEV-06] Create examples/auth/oauth2/main.go with OAuth2 examples
-- [ ] T117 [DEV-06] Add exercises and solutions in docs/01-development/06-authentication/
+- [x] T102 [DEV-06] Create docs/01-development/06-authentication/README.md with chapter overview
+- [x] T103 [P] [DEV-06] Write 01-auth-intro.md covering authentication vs authorization concepts
+- [x] T104 [P] [DEV-06] Write 02-password.md covering bcrypt password hashing
+- [x] T105 [P] [DEV-06] Write 03-jwt-basics.md covering JWT structure and principles
+- [x] T106 [P] [DEV-06] Write 04-jwt-impl.md covering JWT generation, validation, refresh
+- [x] T107 [P] [DEV-06] Write 05-jwt-middleware.md covering JWT authentication middleware
+- [x] T108 [P] [DEV-06] Write 06-session.md covering session-based authentication
+- [x] T109 [P] [DEV-06] Write 07-jwt-vs-session.md comparing JWT and session approaches
+- [x] T110 [P] [DEV-06] Write 08-oauth2-intro.md covering OAuth2 principles
+- [x] T111 [P] [DEV-06] Write 09-oauth2-github.md covering GitHub OAuth2 integration
+- [x] T112 [P] [DEV-06] Write 10-rbac.md covering role-based access control
+- [x] T113 [P] [DEV-06] Create examples/auth/jwt/main.go with JWT examples
+- [x] T114 [P] [DEV-06] Create examples/auth/middleware/main.go with auth middleware
+- [x] T115 [P] [DEV-06] Create examples/auth/session/main.go with session examples
+- [x] T116 [P] [DEV-06] Create examples/auth/oauth2/main.go with OAuth2 examples
+- [x] T117 [DEV-06] Add exercises and solutions in docs/01-development/06-authentication/
 
 **Checkpoint**: DEV-04, DEV-05, DEV-06 complete - Learners can build secure web APIs
 
@@ -230,40 +230,40 @@ infra/                        # 基础设施配置
 
 **Goal**: Enable learners to work with PostgreSQL using database/sql
 
-- [ ] T118 [DEV-07] Create docs/01-development/07-database/README.md with chapter overview
-- [ ] T119 [P] [DEV-07] Write 01-sql-review.md reviewing SQL basics (CRUD, JOIN)
-- [ ] T120 [P] [DEV-07] Write 02-postgres-setup.md covering PostgreSQL setup (local + Docker)
-- [ ] T121 [P] [DEV-07] Write 03-database-sql.md covering database/sql standard library
-- [ ] T122 [P] [DEV-07] Write 04-pgx-driver.md covering pgx driver usage
-- [ ] T123 [P] [DEV-07] Write 05-connection-pool.md covering connection pool configuration
-- [ ] T124 [P] [DEV-07] Write 06-prepared-stmt.md covering prepared statements (SQL injection prevention)
-- [ ] T125 [P] [DEV-07] Write 07-transactions.md covering transaction handling
-- [ ] T126 [P] [DEV-07] Write 08-migrations.md covering database migrations
-- [ ] T127 [P] [DEV-07] Create examples/database/connect/main.go with connection example
-- [ ] T128 [P] [DEV-07] Create examples/database/query/main.go with query examples
-- [ ] T129 [P] [DEV-07] Create examples/database/transaction/main.go with transaction examples
-- [ ] T130 [DEV-07] Add exercises and solutions in docs/01-development/07-database/
+- [x] T118 [DEV-07] Create docs/01-development/07-database/README.md with chapter overview
+- [x] T119 [P] [DEV-07] Write 01-sql-review.md reviewing SQL basics (CRUD, JOIN)
+- [x] T120 [P] [DEV-07] Write 02-postgres-setup.md covering PostgreSQL setup (local + Docker)
+- [x] T121 [P] [DEV-07] Write 03-database-sql.md covering database/sql standard library
+- [x] T122 [P] [DEV-07] Write 04-pgx-driver.md covering pgx driver usage
+- [x] T123 [P] [DEV-07] Write 05-connection-pool.md covering connection pool configuration
+- [x] T124 [P] [DEV-07] Write 06-prepared-stmt.md covering prepared statements (SQL injection prevention)
+- [x] T125 [P] [DEV-07] Write 07-transactions.md covering transaction handling
+- [x] T126 [P] [DEV-07] Write 08-migrations.md covering database migrations
+- [x] T127 [P] [DEV-07] Create examples/database/connect/main.go with connection example
+- [x] T128 [P] [DEV-07] Create examples/database/query/main.go with query examples
+- [x] T129 [P] [DEV-07] Create examples/database/transaction/main.go with transaction examples
+- [x] T130 [DEV-07] Add exercises and solutions in docs/01-development/07-database/
 
 ### DEV-08: GORM框架 (User Story 9)
 
 **Goal**: Enable learners to use GORM ORM effectively
 
-- [ ] T131 [DEV-08] Create docs/01-development/08-gorm/README.md with chapter overview
-- [ ] T132 [P] [DEV-08] Write 01-gorm-intro.md covering GORM introduction and setup
-- [ ] T133 [P] [DEV-08] Write 02-model-definition.md covering model definition with struct tags
-- [ ] T134 [P] [DEV-08] Write 03-crud.md covering Create, Read, Update, Delete operations
-- [ ] T135 [P] [DEV-08] Write 04-query-builder.md covering query building with Where, Order, Limit
-- [ ] T136 [P] [DEV-08] Write 05-associations.md covering 1:1, 1:N, M:N relationships
-- [ ] T137 [P] [DEV-08] Write 06-preload.md covering eager and lazy loading
-- [ ] T138 [P] [DEV-08] Write 07-hooks.md covering GORM hooks (BeforeCreate, AfterUpdate, etc.)
-- [ ] T139 [P] [DEV-08] Write 08-transactions.md covering GORM transactions
-- [ ] T140 [P] [DEV-08] Write 09-raw-sql.md covering raw SQL with GORM
-- [ ] T141 [P] [DEV-08] Write 10-best-practices.md covering GORM best practices
-- [ ] T142 [P] [DEV-08] Create examples/gorm/models/models.go with User, Post, Comment, Tag models
-- [ ] T143 [P] [DEV-08] Create examples/gorm/crud/main.go with CRUD examples
-- [ ] T144 [P] [DEV-08] Create examples/gorm/associations/main.go with relationship examples
-- [ ] T145 [P] [DEV-08] Create examples/gorm/queries/main.go with advanced query examples
-- [ ] T146 [DEV-08] Add exercises and solutions in docs/01-development/08-gorm/
+- [x] T131 [DEV-08] Create docs/01-development/08-gorm/README.md with chapter overview
+- [x] T132 [P] [DEV-08] Write 01-gorm-intro.md covering GORM introduction and setup
+- [x] T133 [P] [DEV-08] Write 02-model-definition.md covering model definition with struct tags
+- [x] T134 [P] [DEV-08] Write 03-crud.md covering Create, Read, Update, Delete operations
+- [x] T135 [P] [DEV-08] Write 04-query-builder.md covering query building with Where, Order, Limit
+- [x] T136 [P] [DEV-08] Write 05-associations.md covering 1:1, 1:N, M:N relationships
+- [x] T137 [P] [DEV-08] Write 06-preload.md covering eager and lazy loading
+- [x] T138 [P] [DEV-08] Write 07-hooks.md covering GORM hooks (BeforeCreate, AfterUpdate, etc.)
+- [x] T139 [P] [DEV-08] Write 08-transactions.md covering GORM transactions
+- [x] T140 [P] [DEV-08] Write 09-raw-sql.md covering raw SQL with GORM
+- [x] T141 [P] [DEV-08] Write 10-best-practices.md covering GORM best practices
+- [x] T142 [P] [DEV-08] Create examples/gorm/basic/main.go with basic GORM examples
+- [x] T143 [P] [DEV-08] Create examples/gorm/query/main.go with query examples
+- [x] T144 [P] [DEV-08] Create examples/gorm/associations/main.go with relationship examples
+- [x] T145 [P] [DEV-08] Create examples/gorm/transactions/main.go with transaction examples
+- [x] T146 [DEV-08] Add exercises and solutions in docs/01-development/08-gorm/
 
 **Checkpoint**: DEV-07, DEV-08 complete - Learners can work with PostgreSQL and GORM
 
@@ -275,19 +275,19 @@ infra/                        # 基础设施配置
 
 **Goal**: Enable learners to implement caching strategies
 
-- [ ] T147 [DEV-09] Create docs/01-development/09-cache/README.md with chapter overview
-- [ ] T148 [P] [DEV-09] Write 01-cache-intro.md covering caching concepts
-- [ ] T149 [P] [DEV-09] Write 02-redis-basics.md covering Redis installation and basic commands
-- [ ] T150 [P] [DEV-09] Write 03-go-redis.md covering go-redis client usage
-- [ ] T151 [P] [DEV-09] Write 04-cache-patterns.md covering Cache-Aside, Write-Through patterns
-- [ ] T152 [P] [DEV-09] Write 05-cache-problems.md covering penetration, breakdown, avalanche
-- [ ] T153 [P] [DEV-09] Write 06-local-cache.md covering go-cache for local caching
-- [ ] T154 [P] [DEV-09] Write 07-multi-level.md covering multi-level cache architecture
-- [ ] T155 [P] [DEV-09] Write 08-cache-consistency.md covering cache-database consistency
-- [ ] T156 [P] [DEV-09] Create examples/cache/redis/main.go with Redis examples
-- [ ] T157 [P] [DEV-09] Create examples/cache/local/main.go with local cache examples
-- [ ] T158 [P] [DEV-09] Create examples/cache/patterns/main.go with cache pattern examples
-- [ ] T159 [DEV-09] Add exercises and solutions in docs/01-development/09-cache/
+- [x] T147 [DEV-09] Create docs/01-development/09-cache/README.md with chapter overview
+- [x] T148 [P] [DEV-09] Write 01-cache-intro.md covering caching concepts
+- [x] T149 [P] [DEV-09] Write 02-redis-basics.md covering Redis installation and basic commands
+- [x] T150 [P] [DEV-09] Write 03-go-redis.md covering go-redis client usage
+- [x] T151 [P] [DEV-09] Write 04-cache-patterns.md covering Cache-Aside, Write-Through patterns
+- [x] T152 [P] [DEV-09] Write 05-cache-problems.md covering penetration, breakdown, avalanche
+- [x] T153 [P] [DEV-09] Write 06-local-cache.md covering go-cache for local caching
+- [x] T154 [P] [DEV-09] Write 07-multi-level.md covering multi-level cache architecture
+- [x] T155 [P] [DEV-09] Write 08-cache-consistency.md covering cache-database consistency
+- [x] T156 [P] [DEV-09] Create examples/cache/redis/main.go with Redis examples
+- [x] T157 [P] [DEV-09] Create examples/cache/local/main.go with local cache examples
+- [x] T158 [P] [DEV-09] Create examples/cache/patterns/main.go with cache pattern examples
+- [x] T159 [DEV-09] Add exercises and solutions in docs/01-development/09-cache/
 
 ### DEV-10: 消息队列 (User Story 11)
 

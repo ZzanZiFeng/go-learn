@@ -65,3 +65,5 @@ node_modules/
 # Database files
 *.db
 *.sqlite
+
+.history

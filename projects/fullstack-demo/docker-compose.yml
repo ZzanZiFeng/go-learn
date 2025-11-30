@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+  # 后端服务
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: fullstack-demo-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - APP_ENV=development
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=demo
+      - DB_PASSWORD=demo123
+      - DB_NAME=fullstack_demo
+      - REDIS_ADDR=redis:6379
+      - RABBITMQ_URL=amqp://demo:demo123@rabbitmq:5672/
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # PostgreSQL 数据库
+  postgres:
+    image: postgres:15-alpine
+    container_name: fullstack-demo-postgres
+    environment:
+      POSTGRES_USER: demo
+      POSTGRES_PASSWORD: demo123
+      POSTGRES_DB: fullstack_demo
+    ports:
+      - "5433:5432"
+    volumes:
+      - demo_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U demo"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # Redis 缓存
+  redis:
+    image: redis:7-alpine
+    container_name: fullstack-demo-redis
+    ports:
+      - "6380:6379"
+    volumes:
+      - demo_redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # RabbitMQ 消息队列
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: fullstack-demo-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: demo
+      RABBITMQ_DEFAULT_PASS: demo123
+    ports:
+      - "5673:5672"
+      - "15673:15672"
+    volumes:
+      - demo_rabbitmq_data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  demo_postgres_data:
+  demo_redis_data:
+  demo_rabbitmq_data:
+
+networks:
+  default:
+    name: fullstack-demo-network
