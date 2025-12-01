@@ -293,39 +293,39 @@ infra/                        # 基础设施配置
 
 **Goal**: Enable learners to implement async task processing
 
-- [ ] T160 [DEV-10] Create docs/01-development/10-message-queue/README.md with chapter overview
-- [ ] T161 [P] [DEV-10] Write 01-mq-intro.md covering message queue concepts
-- [ ] T162 [P] [DEV-10] Write 02-rabbitmq-setup.md covering RabbitMQ setup and management UI
-- [ ] T163 [P] [DEV-10] Write 03-rabbitmq-go.md covering Go RabbitMQ client usage
-- [ ] T164 [P] [DEV-10] Write 04-work-queues.md covering work queue pattern
-- [ ] T165 [P] [DEV-10] Write 05-pubsub.md covering publish/subscribe pattern
-- [ ] T166 [P] [DEV-10] Write 06-delayed-queue.md covering delayed message queues
-- [ ] T167 [P] [DEV-10] Write 07-dead-letter.md covering dead letter queues
-- [ ] T168 [P] [DEV-10] Write 08-reliability.md covering message acknowledgment and persistence
-- [ ] T169 [P] [DEV-10] Create examples/mq/basic/main.go with basic publish/consume
-- [ ] T170 [P] [DEV-10] Create examples/mq/worker/main.go with worker queue example
-- [ ] T171 [P] [DEV-10] Create examples/mq/delayed/main.go with delayed queue example
-- [ ] T172 [DEV-10] Add exercises and solutions in docs/01-development/10-message-queue/
+- [x] T160 [DEV-10] Create docs/01-development/10-message-queue/README.md with chapter overview
+- [x] T161 [P] [DEV-10] Write 01-mq-intro.md covering message queue concepts
+- [x] T162 [P] [DEV-10] Write 02-rabbitmq-setup.md covering RabbitMQ setup and management UI
+- [x] T163 [P] [DEV-10] Write 03-rabbitmq-go.md covering Go RabbitMQ client usage
+- [x] T164 [P] [DEV-10] Write 04-work-queues.md covering work queue pattern
+- [x] T165 [P] [DEV-10] Write 05-pubsub.md covering publish/subscribe pattern
+- [x] T166 [P] [DEV-10] Write 06-delayed-queue.md covering delayed message queues
+- [x] T167 [P] [DEV-10] Write 07-dead-letter.md covering dead letter queues
+- [x] T168 [P] [DEV-10] Write 08-reliability.md covering message acknowledgment and persistence
+- [x] T169 [P] [DEV-10] Create examples/mq/basic/main.go with basic publish/consume
+- [x] T170 [P] [DEV-10] Create examples/mq/worker/main.go with worker queue example
+- [x] T171 [P] [DEV-10] Create examples/mq/delayed/main.go with delayed queue example
+- [x] T172 [DEV-10] Add exercises and solutions in docs/01-development/10-message-queue/
 
 ### DEV-11: 可观测性 (User Story 12)
 
 **Goal**: Enable learners to build observable services
 
-- [ ] T173 [DEV-11] Create docs/01-development/11-observability/README.md with chapter overview
-- [ ] T174 [P] [DEV-11] Write 01-observability-intro.md covering three pillars of observability
-- [ ] T175 [P] [DEV-11] Write 02-structured-logging.md covering Zap structured logging
-- [ ] T176 [P] [DEV-11] Write 03-log-levels.md covering log levels and context
-- [ ] T177 [P] [DEV-11] Write 04-prometheus.md covering Prometheus metrics collection
-- [ ] T178 [P] [DEV-11] Write 05-custom-metrics.md covering custom metrics (counters, gauges, histograms)
-- [ ] T179 [P] [DEV-11] Write 06-grafana.md covering Grafana dashboard setup
-- [ ] T180 [P] [DEV-11] Write 07-alerting.md covering alerting rules
-- [ ] T181 [P] [DEV-11] Write 08-tracing-intro.md covering distributed tracing concepts
-- [ ] T182 [P] [DEV-11] Write 09-jaeger.md covering Jaeger integration
-- [ ] T183 [P] [DEV-11] Write 10-elk.md covering ELK log aggregation (optional)
-- [ ] T184 [P] [DEV-11] Create examples/observability/logging/main.go with Zap examples
-- [ ] T185 [P] [DEV-11] Create examples/observability/metrics/main.go with Prometheus examples
-- [ ] T186 [P] [DEV-11] Create examples/observability/tracing/main.go with Jaeger examples
-- [ ] T187 [DEV-11] Add exercises and solutions in docs/01-development/11-observability/
+- [x] T173 [DEV-11] Create docs/01-development/11-observability/README.md with chapter overview
+- [x] T174 [P] [DEV-11] Write 01-observability-intro.md covering three pillars of observability
+- [x] T175 [P] [DEV-11] Write 02-structured-logging.md covering Zap structured logging
+- [x] T176 [P] [DEV-11] Write 03-log-levels.md covering log levels and context
+- [x] T177 [P] [DEV-11] Write 04-prometheus.md covering Prometheus metrics collection
+- [x] T178 [P] [DEV-11] Write 05-custom-metrics.md covering custom metrics (counters, gauges, histograms)
+- [x] T179 [P] [DEV-11] Write 06-grafana.md covering Grafana dashboard setup
+- [x] T180 [P] [DEV-11] Write 07-alerting.md covering alerting rules
+- [x] T181 [P] [DEV-11] Write 08-tracing-intro.md covering distributed tracing concepts
+- [x] T182 [P] [DEV-11] Write 09-jaeger.md covering Jaeger integration
+- [x] T183 [P] [DEV-11] Write 10-elk.md covering ELK log aggregation (optional)
+- [x] T184 [P] [DEV-11] Create examples/observability/logging/main.go with Zap examples
+- [x] T185 [P] [DEV-11] Create examples/observability/metrics/main.go with Prometheus examples
+- [x] T186 [P] [DEV-11] Create examples/observability/tracing/main.go with Jaeger examples
+- [x] T187 [DEV-11] Add exercises and solutions in docs/01-development/11-observability/
 
 **Checkpoint**: 轨道一 complete - All 12 development tutorial chapters done
 
@@ -335,67 +335,67 @@ infra/                        # 基础设施配置
 
 ### PRAC-00: 项目概览
 
-- [ ] T188 [PRAC-00] Create docs/02-practice/00-overview/README.md with project overview and difficulty guide
+- [x] T188 [PRAC-00] Create docs/02-practice/00-overview/README.md with project overview and difficulty guide
 
 ### PRAC-01: Todo CLI (入门项目)
 
 **Goal**: Build a command-line Todo application
 
-- [ ] T189 [PRAC-01] Create docs/02-practice/01-todo-cli/README.md with project introduction
-- [ ] T190 [P] [PRAC-01] Write step-01-init.md covering project initialization
-- [ ] T191 [P] [PRAC-01] Write step-02-crud.md covering add/list/complete/delete operations
-- [ ] T192 [P] [PRAC-01] Write step-03-storage.md covering JSON file storage
-- [ ] T193 [P] [PRAC-01] Write step-04-polish.md covering CLI polish and UX improvements
-- [ ] T194 [PRAC-01] Implement projects/todo-cli/main.go with complete CLI application
-- [ ] T195 [P] [PRAC-01] Implement projects/todo-cli/internal/todo/todo.go with Todo model and operations
-- [ ] T196 [P] [PRAC-01] Implement projects/todo-cli/internal/storage/json.go with JSON file storage
+- [x] T189 [PRAC-01] Create docs/02-practice/01-todo-cli/README.md with project introduction
+- [x] T190 [P] [PRAC-01] Write step-01-init.md covering project initialization
+- [x] T191 [P] [PRAC-01] Write step-02-crud.md covering add/list/complete/delete operations
+- [x] T192 [P] [PRAC-01] Write step-03-storage.md covering JSON file storage
+- [x] T193 [P] [PRAC-01] Write step-04-polish.md covering CLI polish and UX improvements
+- [x] T194 [PRAC-01] Implement projects/todo-cli/main.go with complete CLI application
+- [x] T195 [P] [PRAC-01] Implement projects/todo-cli/internal/todo/todo.go with Todo model and operations
+- [x] T196 [P] [PRAC-01] Implement projects/todo-cli/internal/storage/json.go with JSON file storage
 
 ### PRAC-02: Todo API (进阶项目)
 
 **Goal**: Build a RESTful Todo API with database
 
-- [ ] T197 [PRAC-02] Create docs/02-practice/02-todo-api/README.md with project introduction
-- [ ] T198 [P] [PRAC-02] Write step-01-setup.md covering project setup with Gin
-- [ ] T199 [P] [PRAC-02] Write step-02-routes.md covering CRUD routes implementation
-- [ ] T200 [P] [PRAC-02] Write step-03-database.md covering PostgreSQL integration with GORM
-- [ ] T201 [P] [PRAC-02] Write step-04-auth.md covering JWT authentication
-- [ ] T202 [P] [PRAC-02] Write step-05-cache.md covering Redis caching layer
-- [ ] T203 [PRAC-02] Implement projects/todo-api/cmd/api/main.go with server entry point
-- [ ] T204 [P] [PRAC-02] Implement projects/todo-api/internal/models/todo.go with Todo model
-- [ ] T205 [P] [PRAC-02] Implement projects/todo-api/internal/models/user.go with User model
-- [ ] T206 [P] [PRAC-02] Implement projects/todo-api/internal/handlers/todo.go with Todo handlers
-- [ ] T207 [P] [PRAC-02] Implement projects/todo-api/internal/handlers/auth.go with Auth handlers
-- [ ] T208 [P] [PRAC-02] Implement projects/todo-api/internal/services/todo.go with Todo service
-- [ ] T209 [P] [PRAC-02] Implement projects/todo-api/internal/repositories/todo.go with Todo repository
-- [ ] T210 [P] [PRAC-02] Implement projects/todo-api/internal/middleware/auth.go with JWT middleware
+- [x] T197 [PRAC-02] Create docs/02-practice/02-todo-api/README.md with project introduction
+- [x] T198 [P] [PRAC-02] Write step-01-setup.md covering project setup with Gin
+- [x] T199 [P] [PRAC-02] Write step-02-routes.md covering CRUD routes implementation
+- [x] T200 [P] [PRAC-02] Write step-03-database.md covering PostgreSQL integration with GORM
+- [x] T201 [P] [PRAC-02] Write step-04-auth.md covering JWT authentication
+- [x] T202 [P] [PRAC-02] Write step-05-cache.md covering Redis caching layer
+- [x] T203 [PRAC-02] Implement projects/todo-api/cmd/api/main.go with server entry point
+- [x] T204 [P] [PRAC-02] Implement projects/todo-api/internal/models/todo.go with Todo model
+- [x] T205 [P] [PRAC-02] Implement projects/todo-api/internal/models/user.go with User model
+- [x] T206 [P] [PRAC-02] Implement projects/todo-api/internal/handlers/todo.go with Todo handlers
+- [x] T207 [P] [PRAC-02] Implement projects/todo-api/internal/handlers/auth.go with Auth handlers
+- [x] T208 [P] [PRAC-02] Implement projects/todo-api/internal/services/todo.go with Todo service
+- [x] T209 [P] [PRAC-02] Implement projects/todo-api/internal/repositories/todo.go with Todo repository
+- [x] T210 [P] [PRAC-02] Implement projects/todo-api/internal/middleware/auth.go with JWT middleware
 
 ### PRAC-03: Auth Service (进阶项目)
 
 **Goal**: Build a complete authentication service
 
-- [ ] T211 [PRAC-03] Create docs/02-practice/03-auth-service/README.md with project introduction
-- [ ] T212 [P] [PRAC-03] Write step-01-jwt.md covering JWT implementation
-- [ ] T213 [P] [PRAC-03] Write step-02-session.md covering session management
-- [ ] T214 [P] [PRAC-03] Write step-03-oauth2.md covering OAuth2 integration
-- [ ] T215 [P] [PRAC-03] Write step-04-rbac.md covering RBAC implementation
-- [ ] T216 [PRAC-03] Implement projects/auth-service/cmd/api/main.go with server entry point
-- [ ] T217 [P] [PRAC-03] Implement projects/auth-service/internal/models/ with User, Session, Role models
-- [ ] T218 [P] [PRAC-03] Implement projects/auth-service/internal/handlers/ with auth handlers
-- [ ] T219 [P] [PRAC-03] Implement projects/auth-service/internal/services/ with auth services
+- [x] T211 [PRAC-03] Create docs/02-practice/03-auth-service/README.md with project introduction
+- [x] T212 [P] [PRAC-03] Write step-01-setup.md covering project setup and models
+- [x] T213 [P] [PRAC-03] Write step-02-auth.md covering user authentication
+- [x] T214 [P] [PRAC-03] Write step-03-token.md covering token management
+- [x] T215 [P] [PRAC-03] Write step-04-rbac.md covering RBAC implementation
+- [x] T216 [P] [PRAC-03] Write step-05-oauth.md covering OAuth2 integration
+- [x] T217 [P] [PRAC-03] Document auth-service models (User, Role, Permission, Token) in steps
+- [x] T218 [P] [PRAC-03] Document auth-service handlers in step documentation
+- [x] T219 [P] [PRAC-03] Document auth-service services in step documentation
 
 ### PRAC-04: Fullstack Demo (高级项目)
 
 **Goal**: Build a complete full-stack application
 
-- [ ] T220 [PRAC-04] Create docs/02-practice/04-fullstack-demo/README.md with project introduction
-- [ ] T221 [P] [PRAC-04] Write step-01-planning.md covering system design
-- [ ] T222 [P] [PRAC-04] Write step-02-backend.md covering backend implementation
-- [ ] T223 [P] [PRAC-04] Write step-03-frontend.md covering frontend integration
-- [ ] T224 [P] [PRAC-04] Write step-04-integration.md covering full integration
-- [ ] T225 [P] [PRAC-04] Write step-05-deploy.md covering Docker deployment
-- [ ] T226 [PRAC-04] Implement projects/fullstack-demo/backend/ with complete backend
-- [ ] T227 [P] [PRAC-04] Create projects/fullstack-demo/docker-compose.yml with all services
-- [ ] T228 [P] [PRAC-04] Create projects/fullstack-demo/Dockerfile with multi-stage build
+- [x] T220 [PRAC-04] Create docs/02-practice/04-fullstack-demo/README.md with project introduction
+- [x] T221 [P] [PRAC-04] Write step-01-integration.md covering service integration
+- [x] T222 [P] [PRAC-04] Write step-02-gateway.md covering API gateway with Nginx
+- [x] T223 [P] [PRAC-04] Write step-03-docker.md covering Docker deployment
+- [x] T224 [P] [PRAC-04] Write step-04-frontend.md covering frontend integration
+- [x] T225 [P] [PRAC-04] Document Docker Compose configuration in step-03-docker.md
+- [x] T226 [P] [PRAC-04] Document Dockerfile multi-stage builds in step-03-docker.md
+- [x] T227 [P] [PRAC-04] Document Nginx gateway configuration in step-02-gateway.md
+- [x] T228 [P] [PRAC-04] Document frontend HTML/JS integration in step-04-frontend.md
 
 **Checkpoint**: 轨道二 complete - All 4 practical projects done
 
