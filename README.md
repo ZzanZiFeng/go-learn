@@ -67,9 +67,9 @@ Go语言和后端开发的**核心知识体系**，12个章节，约52小时学�
 |------|------|------|
 | [01-编译打包](./docs/03-deployment/01-compilation/) | go build、交叉编译、ldflags | 🟢 |
 | [02-Docker容器化](./docs/03-deployment/02-docker/) | Dockerfile、多阶段构建、Compose | 🟡 |
-| [03-配置管理](./docs/03-deployment/03-config/) | 环境变量、配置文件、Secrets | 🟡 |
+| [03-配置管理](./docs/03-deployment/03-configuration/) | 环境变量、配置文件、Secrets | 🟡 |
 | [04-CI/CD](./docs/03-deployment/04-cicd/) | GitHub Actions、GitLab CI | 🟡 |
-| [05-运维监控](./docs/03-deployment/05-operations/) | 健康检查、日志管理、告警 | 🔴 |
+| [05-Kubernetes](./docs/03-deployment/05-kubernetes/) | K8s 部署、健康检查、扩缩容 | 🔴 |
 
 ### 轨道四：测试教程 (Testing Track)
 
